@@ -8,27 +8,20 @@
   <!-- تحسين محركات البحث والمشاركة الاجتماعية Open Graph / Social Media -->
   <meta name="description" content="بروشور إلكتروني تفاعلي للتعريف بمشروع بناء كنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس للروم الأرثوذكس - طريق المطار ومبادرة تبرع بحجر.">
   <meta property="og:title" content="كنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس | معًا نبني بيتًا يُرفع فيه القلب إلى الله">
-  <meta property="og:description" content="صرح كنسي أرثوذكسي، منارة للإيمان ومحبة للأجيال القادمة. شاركونا مسيرة البناء في مبادرة «تبرع بحجر".">
-  <meta property="og:image" content="/assets/images/church-render.jpg">
+  <meta property="og:description" content="صرح كنسي أرثوذكسي، منارة للإيمان ومحبة للأجيال القادمة. شاركونا مسيرة البناء في مبادرة «تبرع بحجر».">
+  <meta property="og:image" content="assets/images/church-render.jpg">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="/index.html">
-
-  <!-- favicon -->
-  <link rel="icon" href="/favicon.ico">
 
   <!-- الخطوط والأيقونات -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- ملف التنسيقات الرئيسي -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="mode-presentation">
-
-  <!-- Skip link for keyboard users -->
-  <a class="skip-link" href="#mainContent" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" onfocus="this.style.position='static';this.style.left='auto';this.style.width='auto';this.style.height='auto';">تخطي إلى المحتوى</a>
 
   <!-- ==========================================================================
        الشريط العلوي الثابت (Header)
@@ -37,7 +30,7 @@
     <div class="header-container">
       <!-- شعار واسم الكنيسة -->
       <a href="#" class="brand-section" data-goto-slide="0">
-        <img src="assets/images/church-logo.png" alt="شعار كنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس" class="brand-logo-img" loading="lazy">
+        <img src="assets/images/church-logo.png" alt="شعار كنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس" class="brand-logo-img">
         <div class="brand-text">
           <span class="brand-title">كنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس</span>
           <span class="brand-subtitle">للروم الأرثوذكس / طريق المطار</span>
@@ -48,29 +41,29 @@
       <div class="header-actions">
         <!-- محوّل نمط العرض (كتيّب تفاعلي / قراءة متصلة) -->
         <div class="view-mode-toggle" title="اختر طريقة التصفح المفضلة لديك">
-          <button type="button" class="mode-tab active" id="modePresentationBtn" aria-pressed="true" aria-label="عرض كتيّب تفاعلي">
+          <button type="button" class="mode-tab active" id="modePresentationBtn">
             <i class="fa-solid fa-book-open"></i>
             <span>كتيّب تفاعلي</span>
           </button>
-          <button type="button" class="mode-tab" id="modeScrollBtn" aria-pressed="false" aria-label="عرض القراءة الانسيابية">
+          <button type="button" class="mode-tab" id="modeScrollBtn">
             <i class="fa-solid fa-bars-staggered"></i>
             <span>قراءة انسيابية</span>
           </button>
         </div>
 
         <!-- زر كتم/تشغيل النغمات الروحانية التفاعلية -->
-        <button type="button" class="header-btn header-btn-icon" id="soundToggleBtn" title="تشغيل نغمة روحانية هادئة" aria-pressed="false" aria-label="تشغيل/إيقاف النغمات الروحانية">
+        <button type="button" class="header-btn header-btn-icon" id="soundToggleBtn" title="تشغيل نغمة روحانية هادئة">
           <i class="fa-solid fa-volume-xmark"></i>
         </button>
 
         <!-- زر المشاركة السريعة -->
-        <button type="button" class="header-btn header-btn-outline" data-open-modal="shareModal" aria-controls="shareModal" aria-haspopup="dialog" aria-expanded="false" aria-label="فتح نافذة المشاركة">
+        <button type="button" class="header-btn header-btn-outline" data-open-modal="shareModal">
           <i class="fa-solid fa-share-nodes"></i>
           <span>مشاركة</span>
         </button>
 
         <!-- زر التبرع الرئيسي -->
-        <button type="button" class="header-btn header-btn-primary" data-open-modal="donateModal" aria-controls="donateModal" aria-haspopup="dialog" aria-expanded="false" aria-label="فتح نافذة التبرع والمساهمة">
+        <button type="button" class="header-btn header-btn-primary" data-open-modal="donateModal">
           <i class="fa-solid fa-heart"></i>
           <span>ساهم في البناء</span>
         </button>
@@ -81,7 +74,7 @@
   <!-- ==========================================================================
        حاوية صفحات وأقسام البروشور الستة (The 6 Brochure Sections)
        ========================================================================== -->
-  <main id="mainContent" class="brochure-wrapper" role="main">
+  <main class="brochure-wrapper">
     <div class="brochure-container">
 
       <!-- ====================================================================
@@ -96,7 +89,7 @@
 
           <!-- شعار الكنيسة الرسمي -->
           <div class="cover-logo-wrapper">
-            <img src="assets/images/church-logo.png" alt="كنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس للروم الأرثوذكس" class="cover-logo-img" loading="lazy">
+            <img src="assets/images/church-logo.png" alt="كنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس للروم الأرثوذكس" class="cover-logo-img">
           </div>
 
           <div class="byzantine-divider">
@@ -116,14 +109,14 @@
           <!-- استعراض بصري موجز يجمع معالم الكنيسة وأيقونة القديسين -->
           <div class="cover-visual-grid">
             <div class="cover-preview-card">
-              <img src="assets/images/church-render.jpg" alt="المجسم المعماري لكنيسة القديسين" loading="lazy">
+              <img src="assets/images/church-render.jpg" alt="المجسم المعماري لكنيسة القديسين">
               <span class="cover-preview-badge">
                 <i class="fa-solid fa-landmark"></i>
                 التصميم المعماري المخطط
               </span>
             </div>
             <div class="cover-preview-card">
-              <img src="assets/images/three-saints-icon.png" alt="أيقونة القديسين بايسيوس وصوفرونيوس وبورفيريوس" loading="lazy">
+              <img src="assets/images/three-saints-icon.png" alt="أيقونة القديسين بايسيوس وصوفرونيوس وبورفيريوس">
               <span class="cover-preview-badge">
                 <i class="fa-solid fa-halo"></i>
                 شفعاء الكنيسة الأبرار
@@ -133,15 +126,15 @@
 
           <!-- أزرار الإجراءات في الغلاف -->
           <div class="cover-actions">
-            <button type="button" class="btn-luxury btn-luxury-primary" data-goto-slide="1" aria-label="التوجه إلى الرؤية والرسالة">
+            <button type="button" class="btn-luxury btn-luxury-primary" data-goto-slide="1">
               <span>تصفّح البروشور</span>
               <i class="fa-solid fa-arrow-left"></i>
             </button>
-            <button type="button" class="btn-luxury btn-luxury-gold" data-goto-slide="4" aria-label="الانتقال إلى مبادرة تبرع بحجر">
+            <button type="button" class="btn-luxury btn-luxury-gold" data-goto-slide="4">
               <i class="fa-solid fa-hand-holding-heart"></i>
               <span>مبادرة «تبرع بحجر»</span>
             </button>
-            <a href="#" class="btn-luxury btn-luxury-outline link-official-site" target="_blank" rel="noopener noreferrer" aria-label="زيارة الموقع الرسمي للمشروع">
+            <a href="#" class="btn-luxury btn-luxury-outline link-official-site" target="_blank" rel="noopener">
               <i class="fa-solid fa-globe"></i>
               <span>الموقع الرسمي للمشروع</span>
             </a>
@@ -209,7 +202,7 @@
         </div>
 
         <div class="cover-actions" style="margin-top: 36px;">
-          <button type="button" class="btn-luxury btn-luxury-primary" data-goto-slide="2" aria-label="الانتقال إلى قسم القديسين الشفعاء">
+          <button type="button" class="btn-luxury btn-luxury-primary" data-goto-slide="2">
             <span>التعرف على القديسين الشفعاء</span>
             <i class="fa-solid fa-arrow-left"></i>
           </button>
@@ -234,20 +227,20 @@
         <div class="saints-wrapper">
           <!-- أيقونة القديسين الثلاثة معًا -->
           <div class="saints-icon-hero">
-            <img src="assets/images/three-saints-icon.png" alt="أيقونة القديسين بايسيوس وصوفرونيوس وبورفيريوس" class="saints-icon-img" loading="lazy">
+            <img src="assets/images/three-saints-icon.png" alt="أيقونة القديسين بايسيوس وصوفرونيوس وبورفيريوس" class="saints-icon-img">
           </div>
 
           <!-- أزرار اختيار القديس لعرض تفاصيله -->
           <div class="saints-selector">
-            <button type="button" class="saint-tab-btn active" data-saint="paisios" aria-pressed="true" aria-label="عرض تفاصيل القديس بايسيوس">
+            <button type="button" class="saint-tab-btn active" data-saint="paisios">
               <span class="saint-tab-name">القديس بايسيوس الآثوسي</span>
               <span class="saint-tab-sub">قديس المحبة والبساطة والصلاة</span>
             </button>
-            <button type="button" class="saint-tab-btn" data-saint="sophronios" aria-pressed="false" aria-label="عرض تفاصيل القديس صوفرونيوس">
+            <button type="button" class="saint-tab-btn" data-saint="sophronios">
               <span class="saint-tab-name">القديس صوفرونيوس</span>
               <span class="saint-tab-sub">بطريرك أورشليم وحامي الإيمان</span>
             </button>
-            <button type="button" class="saint-tab-btn" data-saint="porphyrios" aria-pressed="false" aria-label="عرض تفاصيل القديس بورفيريوس">
+            <button type="button" class="saint-tab-btn" data-saint="porphyrios">
               <span class="saint-tab-name">القديس بورفيريوس</span>
               <span class="saint-tab-sub">الكافسوكاليفي - قديس النور والفرح</span>
             </button>
@@ -275,7 +268,7 @@
         </div>
 
         <div class="cover-actions" style="margin-top: 36px;">
-          <button type="button" class="btn-luxury btn-luxury-primary" data-goto-slide="3" aria-label="الانتقال إلى المشروع المعماري">
+          <button type="button" class="btn-luxury btn-luxury-primary" data-goto-slide="3">
             <span>استكشاف المشروع المعماري</span>
             <i class="fa-solid fa-arrow-left"></i>
           </button>
@@ -300,19 +293,16 @@
         <div class="project-showcase">
           <!-- الصورة التفاعلية لمعالم الكنيسة -->
           <div class="render-container">
-            <picture>
-              <source srcset="assets/images/church-render@2x.jpg 2x, assets/images/church-render.jpg 1x" type="image/jpeg">
-              <img src="assets/images/church-render.jpg" alt="المجسم الهندسي لكنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس" class="render-img" loading="lazy">
-            </picture>
+            <img src="assets/images/church-render.jpg" alt="المجسم الهندسي لكنيسة القديسين بايسيوس وصوفرونيوس وبورفيريوس" class="render-img">
 
             <!-- النقاط التفاعلية (Hotspots) -->
-            <button type="button" class="hotspot-point hotspot-dome" data-spot="dome" title="انقر لمعرفة المزيد عن القبة" aria-label="مزيد عن القبة" aria-controls="hotspotTooltip" aria-expanded="false">1</button>
-            <button type="button" class="hotspot-point hotspot-tower" data-spot="tower" title="انقر لمعرفة المزيد عن الأجراس" aria-label="مزيد عن برج الأجراس" aria-controls="hotspotTooltip" aria-expanded="false">2</button>
-            <button type="button" class="hotspot-point hotspot-nave" data-spot="nave" title="انقر لمعرفة المزيد عن صحن الكنيسة" aria-label="مزيد عن الصحن" aria-controls="hotspotTooltip" aria-expanded="false">3</button>
-            <button type="button" class="hotspot-point hotspot-courtyard" data-spot="courtyard" title="انقر لمعرفة المزيد عن الساحة" aria-label="مزيد عن الساحة والمجمع" aria-controls="hotspotTooltip" aria-expanded="false">4</button>
+            <button type="button" class="hotspot-point hotspot-dome" data-spot="dome" title="انقر لمعرفة المزيد عن القبة" aria-label="القبة المركزية">1</button>
+            <button type="button" class="hotspot-point hotspot-tower" data-spot="tower" title="انقر لمعرفة المزيد عن الأجراس" aria-label="برجا الأجراس">2</button>
+            <button type="button" class="hotspot-point hotspot-nave" data-spot="nave" title="انقر لمعرفة المزيد عن صحن الكنيسة" aria-label="الصحن البازيليكي">3</button>
+            <button type="button" class="hotspot-point hotspot-courtyard" data-spot="courtyard" title="انقر لمعرفة المزيد عن الساحة" aria-label="الساحة والمجمع الرعائي">4</button>
 
             <!-- صندوق معلومات النقطة المنبثق -->
-            <div class="hotspot-tooltip" id="hotspotTooltip" role="tooltip" aria-hidden="true">
+            <div class="hotspot-tooltip" id="hotspotTooltip">
               <h5 id="hotspotTitle">معالم الكنيسة</h5>
               <p id="hotspotDesc">انقر على الأرقام المنتشرة على صورة الكنيسة للاطلاع على تفاصيل كل جزء معماري.</p>
             </div>
@@ -373,7 +363,7 @@
         </div>
 
         <div class="cover-actions" style="margin-top: 36px;">
-          <button type="button" class="btn-luxury btn-luxury-gold" data-goto-slide="4" aria-label="الانتقال إلى مبادرة تبرع بحجر">
+          <button type="button" class="btn-luxury btn-luxury-gold" data-goto-slide="4">
             <i class="fa-solid fa-hand-holding-heart"></i>
             <span>الانتقال إلى مبادرة «تبرع بحجر»</span>
           </button>
@@ -408,25 +398,25 @@
 
             <!-- خيارات الحزم السريعة للحجارة -->
             <div class="stone-presets-grid">
-              <button type="button" class="stone-preset-btn" data-stones="1" aria-label="اختيار قالب حجر واحد">
+              <button type="button" class="stone-preset-btn" data-stones="1">
                 <span class="preset-stones-count">حجر بركة (1)</span>
                 <span class="preset-stones-title">مساهمة فردية مباركة</span>
                 <span class="preset-stones-price">50 دينار</span>
               </button>
 
-              <button type="button" class="stone-preset-btn selected" data-stones="5" aria-label="اختيار قالب 5 حجارة">
+              <button type="button" class="stone-preset-btn selected" data-stones="5">
                 <span class="preset-stones-count">لبنة العائلة (5)</span>
                 <span class="preset-stones-title">مساهمة باسم العائلة والأحباء</span>
                 <span class="preset-stones-price">250 دينار</span>
               </button>
 
-              <button type="button" class="stone-preset-btn" data-stones="20" aria-label="اختيار قالب 20 حجرًا">
+              <button type="button" class="stone-preset-btn" data-stones="20">
                 <span class="preset-stones-count">جدار المحبة (20)</span>
                 <span class="preset-stones-title">مساهمة شركة وعطاء</span>
                 <span class="preset-stones-price">1,000 دينار</span>
               </button>
 
-              <button type="button" class="stone-preset-btn" data-stones="50" aria-label="اختيار قالب 50 حجرًا">
+              <button type="button" class="stone-preset-btn" data-stones="50">
                 <span class="preset-stones-count">ركن السلام (50)</span>
                 <span class="preset-stones-title">مساهمة ركن في الصرح</span>
                 <span class="preset-stones-price">2,500 دينار</span>
@@ -447,7 +437,7 @@
                 <span>تمثيل بصري للجدار الروحي:</span>
                 <span id="selectedStoneCount" style="color: var(--burgundy-primary);">5 حجارة</span>
               </div>
-              <div class="virtual-stones-grid" id="virtualStonesGrid" aria-live="polite">
+              <div class="virtual-stones-grid" id="virtualStonesGrid">
                 <!-- يتم إنشاؤها ديناميكيًا بواسطة JS -->
               </div>
             </div>
@@ -458,7 +448,7 @@
                 <span style="font-size: 0.85rem; color: var(--text-muted); display: block;">القيمة الرمزية المقدرة:</span>
                 <strong id="selectedStonePrice" style="font-size: 1.3rem; color: var(--burgundy-primary); font-family: var(--font-serif);">250 دينار</strong>
               </div>
-              <button type="button" class="btn-luxury btn-luxury-primary" data-open-modal="donateModal" aria-controls="donateModal" aria-haspopup="dialog" aria-expanded="false">
+              <button type="button" class="btn-luxury btn-luxury-primary" data-open-modal="donateModal">
                 <i class="fa-solid fa-heart"></i>
                 <span>تأكيد المساهمة الآن</span>
               </button>
@@ -485,7 +475,7 @@
                 <div class="bank-label">رقم الآيبان الدولي (IBAN):</div>
                 <div class="bank-value-row">
                   <span class="bank-value">JO00 XXXX 0000 0000 0000 0000 0000</span>
-                  <button type="button" class="copy-mini-btn copy-btn" data-copy-text="JO00 XXXX 0000 0000 0000 0000 0000" aria-label="نسخ رقم الآيبان">
+                  <button type="button" class="copy-mini-btn copy-btn" data-copy-text="JO00 XXXX 0000 0000 0000 0000 0000">
                     <i class="fa-regular fa-copy"></i>
                     <span>نسخ</span>
                   </button>
@@ -497,7 +487,7 @@
                 <div class="bank-label">معرّف الدفع الفوري (CliQ Alias):</div>
                 <div class="bank-value-row">
                   <span class="bank-value">CHURCH-STONES</span>
-                  <button type="button" class="copy-mini-btn copy-btn" data-copy-text="CHURCH-STONES" aria-label="نسخ معرف CliQ">
+                  <button type="button" class="copy-mini-btn copy-btn" data-copy-text="CHURCH-STONES">
                     <i class="fa-regular fa-copy"></i>
                     <span>نسخ</span>
                   </button>
@@ -507,11 +497,11 @@
 
             <!-- أزرار العمل في بطاقة التبرع -->
             <div class="donation-cta-group">
-              <a href="#" class="btn-luxury btn-luxury-primary link-donate-page" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+              <a href="#" class="btn-luxury btn-luxury-primary link-donate-page" target="_blank" rel="noopener" style="width: 100%;">
                 <i class="fa-solid fa-credit-card"></i>
                 <span>بوابة الدفع والتبرع الإلكتروني</span>
               </a>
-              <a href="#" class="btn-luxury btn-luxury-outline link-official-site" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+              <a href="#" class="btn-luxury btn-luxury-outline link-official-site" target="_blank" rel="noopener" style="width: 100%;">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 <span>زيارة صفحة التبرع على الموقع الرسمي</span>
               </a>
@@ -520,7 +510,7 @@
         </div>
 
         <div class="cover-actions" style="margin-top: 36px;">
-          <button type="button" class="btn-luxury btn-luxury-primary" data-goto-slide="5" aria-label="الانتقال إلى الخاتمة">
+          <button type="button" class="btn-luxury btn-luxury-primary" data-goto-slide="5">
             <span>الخاتمة ومشاركة البركة</span>
             <i class="fa-solid fa-arrow-left"></i>
           </button>
@@ -550,21 +540,21 @@
           <!-- بطاقات الإجراءات الرئيسية -->
           <div class="actions-showcase-grid">
             <!-- إجراء 1: زيارة الموقع الرسمي -->
-            <a href="#" class="action-tile-btn link-official-site" target="_blank" rel="noopener noreferrer">
+            <a href="#" class="action-tile-btn link-official-site" target="_blank" rel="noopener">
               <div class="action-tile-icon"><i class="fa-solid fa-globe"></i></div>
               <h4 class="action-tile-title">الموقع الرسمي</h4>
               <p class="action-tile-desc">الاطلاع على كافة أخبار المشروع، التقارير الهندسية، والمستجدات.</p>
             </a>
 
             <!-- إجراء 2: التبرع المباشر -->
-            <button type="button" class="action-tile-btn" data-open-modal="donateModal" aria-controls="donateModal" aria-haspopup="dialog" aria-expanded="false">
+            <button type="button" class="action-tile-btn" data-open-modal="donateModal">
               <div class="action-tile-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
               <h4 class="action-tile-title">المساهمة في البناء</h4>
               <p class="action-tile-desc">التبرع بحجر أو المساهمة المباشرة عبر القنوات البنكية والخدمات الإلكترونية.</p>
             </button>
 
             <!-- إجراء 3: نشر الرابط والمشاركة -->
-            <button type="button" class="action-tile-btn" data-open-modal="shareModal" aria-controls="shareModal" aria-haspopup="dialog" aria-expanded="false">
+            <button type="button" class="action-tile-btn" data-open-modal="shareModal">
               <div class="action-tile-icon"><i class="fa-solid fa-share-nodes"></i></div>
               <h4 class="action-tile-title">انشر تؤجر</h4>
               <p class="action-tile-desc">شارك رابط هذا البروشور مع أصدقائك وعائلتك ومجموعات الرعية.</p>
@@ -618,11 +608,11 @@
 
       <!-- أزرار التنقل بين الصفحات -->
       <div class="nav-buttons-group">
-        <button type="button" class="nav-btn" id="prevSlideBtn" aria-label="الصفحة السابقة" disabled>
+        <button type="button" class="nav-btn" id="prevSlideBtn" disabled title="الصفحة السابقة (سهم يمين)">
           <i class="fa-solid fa-arrow-right"></i>
           <span>السابق</span>
         </button>
-        <button type="button" class="nav-btn nav-btn-next" id="nextSlideBtn" aria-label="الصفحة التالية">
+        <button type="button" class="nav-btn nav-btn-next" id="nextSlideBtn" title="الصفحة التالية (سهم يسار أو مسافة)">
           <span>التالي</span>
           <i class="fa-solid fa-arrow-left"></i>
         </button>
@@ -633,16 +623,16 @@
   <!-- ==========================================================================
        نافذة التبرع المنبثقة (Donation Modal)
        ========================================================================== -->
-  <div class="modal-overlay" id="donateModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="donateModalTitle">
-    <div class="modal-box" role="document">
-      <button type="button" class="modal-close-btn" data-close-modal title="إغلاق" aria-label="إغلاق">&times;</button>
+  <div class="modal-overlay" id="donateModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close-btn" data-close-modal title="إغلاق">&times;</button>
       
       <div style="text-align: center; margin-bottom: 24px;">
         <div class="section-badge">
           <i class="fa-solid fa-heart"></i>
           المساهمة في بناء الكنيسة
         </div>
-        <h3 id="donateModalTitle" style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--burgundy-primary); margin-top: 8px;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--burgundy-primary); margin-top: 8px;">
           مبادرة «تبرع بحجر»
         </h3>
         <p style="font-size: 0.92rem; color: var(--text-medium);">
@@ -658,7 +648,7 @@
         <div class="bank-label">رقم الآيبان (IBAN):</div>
         <div class="bank-value-row">
           <span class="bank-value">JO00 XXXX 0000 0000 0000 0000 0000</span>
-          <button type="button" class="copy-mini-btn copy-btn" data-copy-text="JO00 XXXX 0000 0000 0000 0000 0000" aria-label="نسخ الآيبان">
+          <button type="button" class="copy-mini-btn copy-btn" data-copy-text="JO00 XXXX 0000 0000 0000 0000 0000">
             <i class="fa-regular fa-copy"></i>
             <span>نسخ</span>
           </button>
@@ -669,7 +659,7 @@
         <div class="bank-label">التحويل السريع عبر كليك (CliQ):</div>
         <div class="bank-value-row">
           <span class="bank-value">CHURCH-STONES</span>
-          <button type="button" class="copy-mini-btn copy-btn" data-copy-text="CHURCH-STONES" aria-label="نسخ معرف CliQ">
+          <button type="button" class="copy-mini-btn copy-btn" data-copy-text="CHURCH-STONES">
             <i class="fa-regular fa-copy"></i>
             <span>نسخ</span>
           </button>
@@ -677,11 +667,11 @@
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 10px;">
-        <a href="#" class="btn-luxury btn-luxury-primary link-donate-page" target="_blank" rel="noopener noreferrer" style="width: 100%; text-align: center;">
+        <a href="#" class="btn-luxury btn-luxury-primary link-donate-page" target="_blank" rel="noopener" style="width: 100%; text-align: center;">
           <i class="fa-solid fa-credit-card"></i>
           <span>الانتقال لبوابة الدفع الإلكتروني</span>
         </a>
-        <button type="button" class="btn-luxury btn-luxury-outline" data-close-modal style="width: 100%;" aria-label="إغلاق النافذة">
+        <button type="button" class="btn-luxury btn-luxury-outline" data-close-modal style="width: 100%;">
           <span>إغلاق النافذة</span>
         </button>
       </div>
@@ -695,16 +685,16 @@
   <!-- ==========================================================================
        نافذة المشاركة المنبثقة (Share Modal)
        ========================================================================== -->
-  <div class="modal-overlay" id="shareModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="shareModalTitle">
-    <div class="modal-box" role="document">
-      <button type="button" class="modal-close-btn" data-close-modal title="إغلاق" aria-label="إغلاق">&times;</button>
+  <div class="modal-overlay" id="shareModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close-btn" data-close-modal title="إغلاق">&times;</button>
 
       <div style="text-align: center; margin-bottom: 24px;">
         <div class="section-badge">
           <i class="fa-solid fa-share-nodes"></i>
           مشاركة بركة المشروع
         </div>
-        <h3 id="shareModalTitle" style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--burgundy-primary); margin-top: 8px;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--burgundy-primary); margin-top: 8px;">
           شارك هذا البروشور مع أحبائك
         </h3>
         <p style="font-size: 0.92rem; color: var(--text-medium);">
@@ -729,7 +719,7 @@
         </button>
       </div>
 
-      <button type="button" class="btn-luxury btn-luxury-outline" data-close-modal style="width: 100%;" aria-label="إغلاق">
+      <button type="button" class="btn-luxury btn-luxury-outline" data-close-modal style="width: 100%;">
         <span>إغلاق</span>
       </button>
     </div>
@@ -738,13 +728,13 @@
   <!-- ==========================================================================
        إشعار التوست العائم (Global Toast Notification)
        ========================================================================== -->
-  <div class="toast-message" id="globalToast" role="status" aria-live="polite">
+  <div class="toast-message" id="globalToast">
     <i class="fa-solid fa-circle-check" style="color: var(--gold-rich);"></i>
     <span id="toastMessageText">تم تنفيذ الإجراء بنجاح!</span>
   </div>
 
   <!-- ملفات الجافاسكريبت -->
-  <script src="assets/js/brochure-config.js" defer></script>
-  <script src="assets/js/brochure.js" defer></script>
+  <script src="assets/js/brochure-config.js"></script>
+  <script src="assets/js/brochure.js"></script>
 </body>
 </html>
